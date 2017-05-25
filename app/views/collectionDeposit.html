@@ -1,0 +1,82 @@
+
+        <div class="row">
+          <div class="col-xs-7">
+     
+             <form class="form-horizontal" action=" " method="post"  id="">
+    <fieldset>
+      
+      <!-- Form Name -->
+      <legend>Account Details</legend>
+    <div class="form-group">
+        
+        <div class="col-md-8 selectContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+            <select name="ac_mode" id="ac_mode" class="form-control selectpicker" >
+              <option value="">Select Account Mode</option>
+              <option ng-repeat="c in accountList">{{c.name}}</option>
+              
+            </select>
+          </div>
+        </div>
+      </div>
+      
+      <!--Text input for search-->
+               
+                <div class="form-group">
+                    
+                    <div class="col-md-8  inputGroupContainer">
+                    <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+                    <input  name="search" placeholder="Search by name" ng-model="searchText" class="form-control"  type="text">
+                    </div>
+                    </div>
+                    
+                </div>
+                
+                <table class="table  table-bordered table-hover">
+            <thead class="thead-inverse">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                </tr>
+            </thead>
+              <tbody>
+                <tr ng-repeat="c in collection | filter: searchText">
+                  <td>{{c.fname}}</td>
+                  <td>{{c.lname}}</td>
+                  <td>{{c.uname}}</td>
+                </tr>
+              </tbody>
+            </table>
+                
+         </fieldset>
+    </form>
+          </div>
+        
+         <div class="col-xs-3">
+                  <form class="form-horizontal" action=" " method="post"  id="">
+    <fieldset>
+      
+      <!-- Form Name -->
+      <legend> Collection Deposit</legend>
+      
+       <!-- Text input-->
+      
+      <div class="form-group">
+       <div class="col-xs-12  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="fa fa-university"></i></span>
+            <input  name="ac_no" placeholder="Account Number" class="form-control"  type="number">
+          </div>
+        </div>
+
+<div style="background-color:#4286f4; padding: 8px; margin-top: 60px; margin-left:10px;  margin-right:10px; border-radius: 5px;" >
+    <multiple-date-picker ng-model="myArrayOfDates" disable-days-after="today"></multiple-date-picker>
+</div>
+
+      </div>
+
+     </fieldset>
+            </form>
+   
+        </div>
+    </div>

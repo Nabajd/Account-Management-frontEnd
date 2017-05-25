@@ -1,0 +1,126 @@
+<div>
+    <form class="form-horizontal" action=" " method="post"  id="reg_form">
+     <fieldset>
+      
+      <!-- Form Name -->
+      <legend> Account Information</legend>
+    
+      <!-- Text input-->
+      
+      <div class="form-group">
+        <label class="col-md-4 control-label">Account Holder Name</label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input  name="name" placeholder="Name" class="form-control"  type="text">
+          </div>
+        </div>
+      </div>
+      
+    <!-- Text input-->
+      
+      <div class="form-group">
+        <label class="col-md-4 control-label">Address</label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+            <input name="address" placeholder="Address" class="form-control" type="text">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Text input-->
+      
+      <div class="form-group">
+        <label class="col-md-4 control-label">Phone #</label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+            <input name="phone" placeholder="+91-8402872404" class="form-control" type="text" maxlength="10" minlength="10">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Text input-->
+      
+      <div class="form-group">
+        <label class="col-md-4 control-label">Open Date</label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group input-append date" id="datePicker"><span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+            <input type="text" class="form-control" name="date" placeholder="Opening Date"/>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Text input-->
+      
+      <div class="form-group">
+        <label class="col-md-4 control-label">Account number</label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="fa fa-university"></i></span>
+            <input  name="ac_no" placeholder="A/C no." class="form-control"  type="number">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Text input-->
+      
+      <div class="form-group">
+        <label class="col-md-4 control-label">Customer ID</label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input  name="customer_id" placeholder="C_ID" class="form-control"  type="number">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Text input-->
+      
+       <div class="form-group">
+        <label class="col-md-4 control-label">Denomination</label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="fa fa-inr"></i></span>
+            <input  name="amount" placeholder="Amount" class="form-control"  type="number">
+          </div>
+        </div>
+      </div>
+      
+            <!-- Select Basic -->
+      
+      <div class="form-group">
+        <label class="col-md-4 control-label">Account Moded</label>
+        <div class="col-md-6 selectContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+            <select name="ac_mode" id="ac_mode" class="form-control selectpicker" >
+              <option value="" >Select Account Mode</option>
+              <option>Daily</option>
+              <option>Monthly</option>
+              <option >Fixed</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Text input-->
+      
+      <div class="form-group">
+        <label class="col-md-4 control-label">Maturity Date</label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group input-append date" id="datePicker"><span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+            <input type="text" class="form-control" name="maturity_date" placeholder="Maturity Date" disabled/>
+          </div>
+        </div>
+      </div>
+      
+        <div class="form-group">
+        <label class="col-md-4 control-label"></label>
+        <div class="col-md-4">
+          <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+        </div>
+      </div>
+
+      <a href="javascript:void(0);" ng-click="direct();">Ok</a>
+      
+      
+   
+    </fieldset>
+
+   </form>
+ </div>
